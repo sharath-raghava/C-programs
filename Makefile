@@ -1,13 +1,13 @@
 CC=gcc
 CFLAGS=-c -Wall
 
-all: hello
+all: code
 
-hello: hello-world.o
-	$(CC) hello-world.o -o hello
+code: code.o
+	$(CC) code.o -o code
 
-hello-world.o: hello-world.c
-	$(CC) $(CFLAGS) hello-world.c
+code.o: code.c
+	$(CC) $(CFLAGS) code.c
 
 clean:
-	rm *o hello
+	rm *o code
