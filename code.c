@@ -1,9 +1,11 @@
 #include<stdio.h>
+#include<conio.h>
 
 // program to check palindrome or not
 
 int main () {
 	printf(" Enter a string to check for palindrome\n");
+	char *str;
 	gets(str);
 	int flag = 0;
 	int len = strlen(str);
